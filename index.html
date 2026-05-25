@@ -740,44 +740,144 @@ Instrucción Final: El código debe estar contenido en un solo archivo o estruct
 4- Pedir un video o una presentación interactiva basada en el cuento.`
       },
       {
-        title: 'Ejemplo 8 · Planeamiento didáctico',
+        title: 'Ejemplo 8 · juego en ingles',
         formula: 'Rol + estructura curricular + tablas + evaluación',
-        description: 'Este ejemplo muestra cómo solicitar a una IA la creación de un planeamiento didáctico completo basado en formatos oficiales del MEP de Costa Rica, integrando habilidades, indicadores, estrategias de mediación y evaluación.',
-        prompt: `Actúa como un Especialista en Diseño Curricular del MEP de Costa Rica. Tu tarea es generar un planeamiento didáctico basado estrictamente en el formato del "Anexo A 2026".
+        description: 'Este Ejemplo muestra como crear una app de colores en ingles y con audio',
+        prompt: `Crea un juego educativo interactivo para niños de preescolar utilizando únicamente HTML, CSS y JavaScript. El juego debe ser completamente funcional, atractivo visualmente y diseñado especialmente para aprender los colores en inglés mediante audios personalizados.
 
-### INSTRUCCIONES DE ESTRUCTURA (SEGÚN ARCHIVO DDC):
+Objetivo del juego
 
-1. SECCIÓN I: Habilidades en el marco de la Política Curricular.
-   - Tabla de 2 COLUMNAS.
-   - Columna 1: Habilidad y su definición.
-   - Columna 2: Indicadores (pautas para el desarrollo de la habilidad).
+El niño debe arrastrar un color desde la columna izquierda hacia el audio correcto ubicado en la columna derecha.
 
-2. SECCIÓN II: Aprendizajes esperados, indicadores de los aprendizajes esperados y estrategias de mediación.
-   - Tabla de 3 COLUMNAS.
-   - Columna 1: Componente del programa de estudio (Conceptual). (Utiliza el proporcionado por el docente).
-   - Columna 2: Indicadores del aprendizaje esperado. (Debes redactarlos tú de forma que sean medibles y coherentes con el componente).
-   - Columna 3: Estrategias de Mediación. (Diseña actividades secuenciales de Inicio, Desarrollo y Cierre, integrando el enfoque DUA).
+Ejemplo:
 
-3. SECCIÓN III: Instrumentos de evaluación.
-   - Tabla de 4 COLUMNAS.
-   - Columna 1: Indicador del aprendizaje esperado.
-   - Columna 2: Proceso Inicial.
-   - Columna 3: Proceso Intermedio.
-   - Columna 4: Proceso Avanzado.
+El niño escucha “Red”
+Debe arrastrar el cuadro rojo hacia ese audio.
 
-### DATOS DE ENTRADA (PROPORCIONADOS POR EL DOCENTE):
-- ASIGNATURA Y NIVEL: [Preescolar]
-- HABILIDAD Y SU DEFINICIÓN: [Dimensión Maneras de pensar Habilidad Pensamiento Sistémico Habilidad para ver el todo y las partes, así como las conexiones entre estas que permiten la construcción de sentido de acuerdo al contexto.]
+Si acierta:
 
-- INDICADORES PAUTAS (DESARROLLO DE HABILIDAD): [Patrones dentro del sistema Abstrae datos, hechos, acciones y objetos como parte de contexto más amplios y complejos.
-Causalidad entre los componentes del sistema Expone cómo cada objeto, hecho, persona y ser vivo son parte de un sistema dinámico de interrelación e interdependencia en su entorno determinado.
-Modificación y mejoras del sistema Desarrolla nuevos conocimientos, técnicas y herramientas prácticas que le permiten la reconstrucción de sentidos.]
-- COMPONENTE DEL PROGRAMA DE ESTUDIO: [Lateralidad, Simetría del cuerpo. Lado izquierdo y derecho del cuerpo. Dominancia lateral paulatina.]
+Mostrar mensaje animado:
+“Correct!”
+“Great job!”
+Reproducir sonido de éxito.
+Mostrar efecto visual positivo.
 
----
-### RESULTADO ESPERADO:
-Genera los Aspectos Administrativos, marca la Competencia General (Ciudadanía, Vida o Empleo) y presenta las tres tablas en formato Markdown para facilitar el copiado a Word. Finaliza con las Reflexiones del Docente.`
-      },
+Si falla:
+
+Mostrar mensaje:
+“Incorrect”
+“Try again”
+La figura debe regresar a su posición original.
+Permitir volver a intentarlo.
+Estructura de pantalla
+
+La pantalla debe dividirse en 2 columnas grandes:
+
+Columna izquierda
+
+Debe contener:
+
+Cuadros grandes de colores arrastrables.
+Cada color debe poder personalizarse.
+Deben verse grandes y fáciles de tocar.
+
+Colores iniciales:
+
+Red
+Blue
+Green
+Yellow
+Purple
+Orange
+Columna derecha
+
+Debe contener:
+
+Tarjetas o espacios de audio.
+Cada tarjeta debe tener:
+Un botón de reproducir audio.
+Un botón para subir audio personalizado.
+Un área donde se soltará el color correcto.
+Funcionalidades importantes
+Sistema Drag and Drop
+
+Implementar:
+
+Arrastrar y soltar con mouse.
+Compatibilidad táctil para celulares y tablets.
+Animaciones suaves al mover colores.
+Audios personalizados
+
+Cada espacio de audio debe permitir:
+
+Subir archivos:
+mp3
+wav
+ogg
+Reemplazar audios fácilmente.
+Reproducir el audio antes de jugar.
+Retroalimentación
+Correcto
+Animación verde brillante.
+Sonido positivo.
+Estrella o confeti animado.
+Sumar puntos.
+Incorrecto
+Vibración o animación suave.
+Mensaje de error amigable.
+Regresar color a posición original.
+Diseño visual
+
+El diseño debe:
+
+Ser infantil y colorido.
+Tener bordes redondeados.
+Incluir sombras suaves.
+Usar tipografía grande.
+Tener efectos visuales modernos.
+Ser totalmente responsivo.
+Panel de configuración
+
+Agregar un pequeño panel donde el docente pueda:
+
+Cambiar colores.
+Cambiar nombres en inglés.
+Agregar nuevos colores.
+Eliminar colores.
+Reiniciar partida.
+Activar/desactivar sonidos.
+Extras educativos
+
+Agregar:
+
+Contador de aciertos.
+Botón “Shuffle”.
+Modo pantalla completa.
+Música de fondo opcional.
+Mensajes motivadores aleatorios en inglés:
+“Awesome!”
+“Excellent!”
+“You can do it!”
+Requisitos técnicos
+Crear:
+index.html
+style.css
+script.js
+No usar frameworks externos.
+Código limpio y comentado.
+Funcionar sin internet.
+No dejar funciones incompletas.
+Resultado esperado
+
+Generar TODO el código completo y funcional del juego.
+
+El resultado debe permitir:
+
+Subir audios personalizados en inglés.
+Arrastrar colores.
+Detectar aciertos y errores.
+Ser atractivo para niños de preescolar.
+Abrirse directamente en cualquier navegador.      },
       {
         title: 'Ejemplo 9 · Crear presentación infantil con Kimi',
         formula: 'Presentación visual + estilo artístico + interacción',
